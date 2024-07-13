@@ -4,7 +4,7 @@ import Profile from "./components/Profile";
 
 export default function Home() {
   return (
-    <div className="m-1">
+    <div className="m-1 text-sm md:text-base">
       <Header />
       <br /><br />
       <Profile />

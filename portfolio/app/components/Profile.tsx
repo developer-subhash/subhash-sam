@@ -3,8 +3,15 @@ import image from "../../public/images/profile.jpg";
 
 export default function () {
   return (
-    <div className="flex justify-around h-400">
-      <div className="w-1/3 h-full p-2 overflow-auto rounded-lg shadow-xl shadow-orange-500/40 hover:shadow-red-500/40">
+    <div className="flex flex-col md:flex-row items-center md:justify-around">
+      <div className="md:w-1/3 w-3/4 mb-10 md:mb-0">
+        <Image
+          className="w-full h-auto rounded-lg shadow-md shadow-green-500/40 hover:shadow-red-500/40 "
+          src={image}
+          alt="profile"
+        />
+      </div>
+      <div className="md:w-1/3 w-3/4 h-full p-2 rounded-lg shadow-md shadow-orange-500/40 hover:shadow-red-500/40">
         <p>
           Hello,
           <br /><br />
@@ -26,15 +33,7 @@ export default function () {
           Subhash
         </p>
       </div>
-      {/* <div className="w-1/3"> */}
-        <Image
-          className="rounded-lg shadow-xl shadow-green-500/40 hover:shadow-red-500/40"
-          src={image}
-          alt="profile"
-          width={500}
-          height={400}
-        />
-        {/* </div> */}
+      
     </div>
   );
 }
