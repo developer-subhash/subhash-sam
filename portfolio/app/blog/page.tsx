@@ -14,7 +14,7 @@ export default function Home() {
           in my professional work or my self project.
         </p>
       </div>
-      <div className="flex flex-col sm:flex-row flex-wrap justify-around m-[2rem] py-[2em] shadow-md shadow-rose-500 rounded-lg">
+      <div className="flex flex-col sm:flex-row flex-wrap justify-around py-[2em]">
         {
             subjects.map(topic => {
                 return <TopicMenu 
