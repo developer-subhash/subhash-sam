@@ -1,11 +1,11 @@
+import image from "/public/images/profile.jpg";
 import Image from "next/image";
-import image from "../../public/images/profile.jpg";
 
 export default function () {
   return (
     <div className="flex flex-col md:flex-row items-center md:justify-around">
-      <div className="md:w-1/3 w-3/4 mb-10 md:mb-0">
-        <Image
+      <div className="md:w-1/3 w-3/4 mb-10 md:mb-0 shadow-md shadow-green-500/50 hover:shadow-red-500/40 rounded-md">
+      <Image
           className="w-full h-auto rounded-lg shadow-md shadow-green-500/40 hover:shadow-red-500/40 "
           src={image}
           alt="profile"

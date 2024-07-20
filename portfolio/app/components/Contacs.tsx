@@ -14,6 +14,7 @@ const Contacts = () => {
       <a href="https://www.instagram.com/subhash__sam" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faInstagram} className="text-red-500 hover:text-red-700 transition-colors duration-300" />
       </a>
+      <br /><br /><br />
     </div>
   );
 };
